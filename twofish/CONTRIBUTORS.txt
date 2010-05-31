@@ -1,0 +1,7 @@
+# This is the list of people who have contributed code to 'freecrypto/twofish'.
+
+# Names should be added to this file like so:
+#   Name <email address>
+
+# Please keep the list sorted.
+
