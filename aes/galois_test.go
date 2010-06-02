@@ -8,12 +8,17 @@ import (
 )
 
 
-/* For the AES algorith, the irreducible polynomial is
-    `x^8 + x^4 + x^3 + x + 1`
-*/
 func TestIrreduciblePolynomial(t *testing.T) {
-	if _IRREDUCIBLE_POLYNOMIAL != gadd(1<<8, 1<<4, 1<<3, 1<<1, 1<<0) {
-		t.Error("wrong value in irreducible polynomial")
+	// x^8 + x^4 + x^3 + x + 1
+	if gadd(1<<8, 1<<4, 1<<3, 1<<1, 1<<0) != _IRREDUCIBLE_POLYNOMIAL {
+		t.Error("wrong value in constant for irreducible polynomial")
+	}
+}
+
+func TestGenerator(t *testing.T) {
+	// x + 1
+	if gadd(1<<1, 1<<0) != _GENERATOR {
+		t.Error("wrong value in constant for generator")
 	}
 }
 
