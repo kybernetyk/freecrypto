@@ -1,7 +1,0 @@
-# This is the list of people who have contributed code to 'freecrypto'.
-
-# Names should be added to this file like so:
-#   Name <email address>
-
-# Please keep the list sorted.
-
