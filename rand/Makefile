@@ -1,6 +1,6 @@
 include $(GOROOT)/src/Make.$(GOARCH)
 
-TARG=freecrypto/rand
+TARG=github.com/kless/freecrypto/rand
 GOFILES=\
 	random.go\
 
