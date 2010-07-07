@@ -1,10 +1,10 @@
 // To the extent possible under law, Authors have waived all copyright and
 // related or neighboring rights to 'freecrypto'.
 
-package freecrypto
+package util
 
 import (
-	"encoding/binary"
+	//"encoding/binary"
 )
 
 
@@ -32,6 +32,9 @@ func ByteToBit(n uint) uint {
 	return n << 3 // * 8
 }
 
+
+// === Test
+// ===
 
 func IsPowerOf2(n uint) bool {
 	return n > 0 && (n & (n-1)) == 0
