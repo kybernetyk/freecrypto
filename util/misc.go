@@ -11,7 +11,7 @@ import (
 /* Calculates the entropy level according to the desired security level in bits
 and the domain of possible values (the number of values).
 */
-func Entropy(bitsLevel, values uint16) float64 {
+func Entropy(bitsLevel, values uint) float64 {
 	return float64(bitsLevel) / math.Log2(float64(values))
 }
 

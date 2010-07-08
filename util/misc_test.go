@@ -9,7 +9,7 @@ import (
 
 
 func TestEntropy(t *testing.T) {
-	bits := []uint16{80, 112, 128, 192, 256}
+	bits := []uint{80, 112, 128, 192, 256}
 	result := []float64{10, 14, 16, 24, 32} // for domain of 256 values
 
 	for i, b := range bits {
