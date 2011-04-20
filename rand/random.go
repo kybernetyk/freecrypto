@@ -12,7 +12,7 @@ const _URANDOM = "/dev/urandom"
 
 /* Reads the pseudo-random device to fills the array. */
 func ReadUrandom(destination []byte) os.Error {
-	fd, err := os.Open(_URANDOM, os.O_RDONLY, 0)
+	fd, err := os.OpenFile(_URANDOM, os.O_RDONLY, 0)
 	if err != nil {
 		return os.NewError("pseudo-random source malfunction: " + _URANDOM)
 	}
